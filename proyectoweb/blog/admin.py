@@ -6,7 +6,7 @@ class CategoriaAdmin(admin.ModelAdmin):
 class PostAdmin(admin.ModelAdmin):
     readonly_fields=('created','updated')
 
-from .models import Catergoria, Post
+from .models import Categoria, Post
 
-admin.site.register(Catergoria, CategoriaAdmin)
+admin.site.register(Categoria, CategoriaAdmin)
 admin.site.register(Post, PostAdmin)
