@@ -3,12 +3,12 @@ from urllib import request
 
 class Carro:
     def __init__(self, request):
-        self.request=request
+        """ self.request=request
         self.session=request.session
         carro=self.session.get("carro")
         if not carro:
             carro=self.session["carro"]={}
-        #else:
+        #else: """
         self.carro=carro
     def agregar(self,producto):
         if (str(producto.id) not in self.carro.keys()):
